@@ -23,3 +23,24 @@ class BookModel(models.Model):
 
     def __str__(self):
         return self.title
+
+class Review(models.Model):
+    POINTS = (
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+        ('5', '5'),
+
+    )
+    book = models.ForeignKey(BookModel, on_delete=models.CASCADE, related_name='reviews')
+    created_at = models.DateField(auto_now_add=True)
+    text_review = models.TextField(verbose_name='Напишите отзыв о книге')
+    points = models.CharField(max_length=100, verbose_name="Поставьте оценку", choices=POINTS, default='1')
+
+    class Meta:
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзывы'
+
+    def __str__(self):
+        return F'{self.book} - {self.points}'

@@ -1,0 +1,20 @@
+{% load static %}
+{% include 'components/header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in books_youth %}
+
+<p>{{ i.name }}</p>
+<p>{{ i.price }}</p>
+
+{% endfor %}
+
+</body>
+</html>
+{% include 'components/footer.html' %}

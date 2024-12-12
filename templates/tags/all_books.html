@@ -1,0 +1,25 @@
+{% load static %}
+{% include 'components/header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="{% url 'children_books' %}">Детей</a>
+<a href="{% url 'teenager_books' %}">Подростков</a>
+<a href="{% url 'youth_books' %}">Молодежи</a>
+<a href="{% url 'pensioner_books' %}">Пенсионеров</a>
+
+{% for i in books %}
+
+<p>{{ i.name }}</p>
+<p>{{ i.price }}</p>
+
+{% endfor %}
+
+</body>
+</html>
+{% include 'components/footer.html' %}
