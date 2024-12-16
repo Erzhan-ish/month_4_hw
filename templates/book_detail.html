@@ -20,6 +20,11 @@
         </div>
     </div>
 
+    <form action="/create_review/" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Добавить коментарий</button>
+    </form>
     <!-- Блок для комментариев -->
     <div class="comment-section">
         <h5>Комментарии</h5>

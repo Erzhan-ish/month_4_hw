@@ -1,7 +1,19 @@
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 import datetime
 from . import models
+from .forms import ReviewForm
+
+
+def create_review_view(request):
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('books')
+    else:
+        form = ReviewForm()
+    return render(request, template_name='book_detail.html', context={'form' : form})
 
 def book_detail_view(request, id):
     if request.method == 'GET':
