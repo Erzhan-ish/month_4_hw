@@ -1,0 +1,6 @@
+<form method="POST">
+    {% csrf_token %}
+<h1>Вы уверены что хотите удалить корзину?</h1>
+    <button type='submit'>Да</button>
+    <button><a href="{% url 'basketList' %}">Нет</a></button>
+</form>
