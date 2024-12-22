@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'library_blog',
     'age_rest_books',
     'basket',
+    'parser_app',
 ]
 
 MIDDLEWARE = [
