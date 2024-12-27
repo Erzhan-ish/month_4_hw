@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="696d9920-0e4c-44dc-ab24-1404d88db334" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/parser/kinoogo_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/kinoogo_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser_app/paser_kinoogo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/users/user_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/kinoogo_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parser/kinoogo_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/kinoogo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parser/kinoogo_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +63,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\PycharmProjects\month_4_GEEKS_LIBRARY\templates" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\month_4_GEEKS_LIBRARY\templates" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -86,7 +93,9 @@
       <workItem from="1734259498852" duration="20391000" />
       <workItem from="1734457046191" duration="8649000" />
       <workItem from="1734609086173" duration="131000" />
-      <workItem from="1734888111842" duration="4012000" />
+      <workItem from="1734888111842" duration="4673000" />
+      <workItem from="1735057959099" duration="2276000" />
+      <workItem from="1735294115599" duration="1992000" />
     </task>
     <servers />
   </component>
