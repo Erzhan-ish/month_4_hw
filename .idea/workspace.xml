@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="696d9920-0e4c-44dc-ab24-1404d88db334" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/recipe/ingredient_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/recipe/list_collection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/recipe/list_ingredient.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/recipes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library_blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/library_blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +85,7 @@
       <workItem from="1734888111842" duration="4673000" />
       <workItem from="1735057959099" duration="2276000" />
       <workItem from="1735294115599" duration="3243000" />
-      <workItem from="1735362704372" duration="22596000" />
+      <workItem from="1735362704372" duration="23638000" />
     </task>
     <servers />
   </component>

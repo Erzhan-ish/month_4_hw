@@ -1,3 +1,10 @@
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
+from django.core.cache import cache
+
+
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 import datetime
@@ -39,15 +46,21 @@ class BookDetailView(generic.DetailView):
         book_id = self.kwargs.get('id')
         return get_object_or_404(BookModel, id=book_id)
 
-
+@method_decorator(cache_page(60 * 15), name='dispatch')
 class BookListView(generic.ListView):
     template_name = 'book.html'
     context_object_name = 'book_list'
     model = BookModel
 
     def get_queryset(self):
-        return self.model.objects.all().order_by('-id')
+        books = cache.get('books')
+        if not books:
+            books = self.model.objects.all().order_by('-id')
+            cache.set('books', books, 60 * 15)
+        return books
 
+def clear_todo_cache(sender, **kwargs):
+    cache.delete('books')
 
 class AboutMeView(generic.TemplateView):
     def get(self,request):
