@@ -1,0 +1,6 @@
+<form method="POST">
+    {% csrf_token %}
+<h1>Вы уверены что хотите удалить рецепт?</h1>
+    <button type='submit'>Да</button>
+    <button><a href="{% url 'recipe_list' %}">Нет</a></button>
+</form>

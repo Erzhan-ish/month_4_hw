@@ -1,0 +1,10 @@
+<a href="{% url 'sweet_recipe' %}">сладкое</a>
+<a href="{% url 'salty_recipe' %}">соленое</a>
+<a href="{% url 'flour_recipe' %}">мучное</a>
+
+{% for i in recipe %}
+
+<p>{{ i.name }}</p>
+<p>{{ i.price }}</p>
+
+{% endfor %}

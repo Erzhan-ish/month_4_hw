@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="696d9920-0e4c-44dc-ab24-1404d88db334" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/user_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipes/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipes/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/all_collection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/create_collection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/create_ingredient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/create_recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/list_recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/recipe_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/recipe_flour.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/recipe_salty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipe/recipe_sweet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/kinoogo_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parser/kinoogo_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/kinoogo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parser/kinoogo_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +99,8 @@
       <workItem from="1734609086173" duration="131000" />
       <workItem from="1734888111842" duration="4673000" />
       <workItem from="1735057959099" duration="2276000" />
-      <workItem from="1735294115599" duration="1992000" />
+      <workItem from="1735294115599" duration="3243000" />
+      <workItem from="1735362704372" duration="15512000" />
     </task>
     <servers />
   </component>
