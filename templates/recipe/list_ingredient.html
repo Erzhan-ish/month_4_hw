@@ -1,0 +1,15 @@
+<ul>
+    {% for i in ingredient_list %}
+    <li>
+        <p>{{ i.recipe }}</p>
+        <h1>{{ i.name }}</h1>
+        <p>{{ i.quantity }}</p>
+        <h1>{{ i.unit }}</h1>
+        <h1>{{ i.is_optional }}</h1>
+        <p>{{ i.calories }}</p>
+        <h1>{{ i.notes }}</h1>
+        <a href="/ingredient_list/update/">Изменить</a>
+
+    </li>
+    {% endfor %}
+</ul>

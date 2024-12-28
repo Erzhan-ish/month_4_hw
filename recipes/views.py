@@ -1,4 +1,8 @@
+from audioop import reverse
+
 from django.shortcuts import get_object_or_404
+from django.urls import reverse_lazy
+
 from .forms import RecipeForm, IngredientForm, CollectionForm
 from django.views import generic
 from .models import RecipeModel, IngredientModel, CollectionModel
@@ -22,6 +26,30 @@ class CreateIngredientView(generic.CreateView):
         print(form.cleaned_data)
         return super(CreateIngredientView, self).form_valid(form=form)
 
+
+class IngredientListView(generic.ListView):
+    template_name = 'recipe/list_ingredient.html'
+    context_object_name = 'ingredient_list'
+    model = IngredientModel
+
+    def get_queryset(self):
+        return self.model.objects.all().order_by('-id')
+
+
+class UpdateIngredientView(generic.UpdateView):
+    template_name = 'recipe/ingredient_update.html'
+    form_class = IngredientForm
+    success_url = '/ingredient_list/'
+
+    def form_valid(self, form):
+        print(form.cleaned_data)
+        return super(UpdateIngredientView, self).form_valid(form=form)
+
+    def get_object(self, **kwargs):
+        ingredient_id = self.kwargs.get['id']
+        return get_object_or_404(IngredientModel, id=ingredient_id)
+
+
 class CollectionView(generic.CreateView):
     template_name = 'recipe/create_collection.html'
     form_class = CollectionForm
@@ -30,6 +58,14 @@ class CollectionView(generic.CreateView):
     def form_valid(self, form):
         print(form.cleaned_data)
         return super(CollectionView, self).form_valid(form=form)
+
+class CollectionListView(generic.ListView):
+    template_name = 'recipe/list_collection.html'
+    context_object_name = 'collection_list'
+    model = CollectionModel
+
+    def get_queryset(self):
+        return self.model.objects.all().order_by('-id')
 
 class RecipeListView(generic.ListView):
     template_name = 'recipe/list_recipe.html'
